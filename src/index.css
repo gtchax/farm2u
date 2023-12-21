@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.7% 82.9%;
+  }
+}
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+  /* body {
+    @apply min-h-[100vh] flex flex-col;
+  } */
+
+  .btn {
+    @apply bg-white bg-opacity-10 border border-transparent-white  hover:bg-opacity-20 transition-colors ease-in [&_.highlight]:bg-transparent-white [&_.highlight]:rounded-full [&_.highlight]:px-2 [&_.highlight:last-child]:ml-2 [&_.highlight:last-child]:-mr-2 [&_.highlight:first-child]:-ml-2 [&_.highlight:first-child]:mr-2;
+  }
+}
+
+body {
+  background-color: #fff9e6;
+  font-family: "Playpen Sans", cursive;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+  /* Add additional styles for your main content */
+}
+
+.footer {
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+}
+
+/* .menubar::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: green;
+  height: 8px;
+  border-radius: 4px;
+  bottom: -0.87rem;
+  left: 0;
+  z-index: -10;
+} */
+
+#mask {
+  /* background-image: url("harvest.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+
+
+  -webkit-mask-image: url("plant.svg");
+  mask-image: url("plant.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 58vmin; */
+
+  background-image: url("veg.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  mask-image: url("veg.svg");
+  /* mask-size: 60vmin; */
+  mask-repeat: no-repeat;
+  mask-position: left;
+}
+
+.chick {
+  background-image: url("hen.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  mask-image: url("hen.svg");
+  /* mask-size: 60vmin; */
+  mask-repeat: no-repeat;
+  mask-position: left;
+}
+
+.anton {
+  font-family: "Anton", sans-serif;
+}
+
+.bread {
+  background-image: url("hen.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  mask-image: url("bread.svg");
+  /* mask-size: 60vmin; */
+  mask-repeat: no-repeat;
+  mask-position: left;
+}
